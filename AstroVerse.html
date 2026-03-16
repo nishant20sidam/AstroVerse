@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astroverse</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: black;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: rgba(0, 0, 50, 0.8);
+            padding: 15px;
+            width: 100%;
+            position: relative;
+        }
+        nav {
+            background: rgba(0, 0, 70, 0.8);
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding-top: 20px;
+        }
+        .planet {
+            display: inline-block;
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            transition: transform 0.3s, color 0.3s;
+            text-decoration: none; /* Removes underline */
+        }
+        .planet:hover {
+            transform: scale(1.2);
+        }
+
+        /* Unique colors for each planet name */
+        #mercury { background: gray; color: white; }
+        #venus { background: orange; color: white; }
+        #earth { background: blue; color: lightblue; }
+        #mars { background: red; color: white; }
+        #jupiter { background: brown; color: yellow; }
+        #saturn { background: goldenrod; color: white; }
+        #uranus { background: cyan; color: navy; }
+        #neptune { background: darkblue; color: lightblue; }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 50, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Astroverse</h1>
+    </header>
+    <nav>
+        <ul>
+        
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+            <li><a href="login.html" target="_blank">Login</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Welcome to Astroverse</h2>
+            <p>Your gateway to the wonders of the universe.</p>
+        </section>
+        <section id="solar-system">
+            <h2>The Solar System</h2>
+            <a href="mercury.html" target="_blank" class="planet" id="mercury">Mercury</a>
+            <a href="venus.html" target="_blank" class="planet" id="venus">Venus</a>
+            <a href="earth.html" target="_blank" class="planet" id="earth">Earth</a>
+            <a href="mars.html" target="_blank" class="planet" id="mars">Mars</a>
+            <a href="jupiter.html" target="_blank" class="planet" id="jupiter">Jupiter</a>
+            <a href="saturn.html" target="_blank" class="planet" id="saturn">Saturn</a>
+            <a href="uranus.html" target="_blank" class="planet" id="uranus">Uranus</a>
+            <a href="neptune.html" target="_blank" class="planet" id="neptune">Neptune</a>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 Astroverse. All rights reserved.</p>
+    </footer>
+</body>
+</html>
